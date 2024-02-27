@@ -1,5 +1,6 @@
 public class CercarVocals {
 
+    // MODIFICACIÖ PROVA GIT
     public static void main(String[] arg){
         char[] resultat = cercarVocals("HolA com va a la casa de");
         imprimir(resultat);
