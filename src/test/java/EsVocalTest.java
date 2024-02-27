@@ -5,8 +5,8 @@ public class EsVocalTest {
 
     @Test
     public void testCaractersRaros(){
-        char c = ' '; // altres caracters ',/,(,...
-        assertFalse(CercarVocals.esVocal(c));
+        char c = '¿' ; // altres caracters ',/,(,...
+        assertFalse(CercarVocals.esVocal(c),"prova 1 fallada");
     }
 
     @Test
