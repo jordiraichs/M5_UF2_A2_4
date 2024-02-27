@@ -11,12 +11,18 @@ public class CercarVocals {
      * @return un char[] amb les vocals de entrada
      */
     public static char[] cercarVocals(String entrada) {
+        int num_vocals = numVocals(entrada);
 
-        char[] sortida = new char[numVocals(entrada)];
+        char[] sortida = new char[num_vocals];
 
+        char c;
         int i , j =0;
         for(i = 0; i < entrada.length(); i ++){
-            if(esVocal(entrada.charAt(i))) sortida[j++]=entrada.charAt(i);
+            c = entrada.charAt(i);
+            if(esVocal(c)){
+                sortida[j]=entrada.charAt(i);
+                j = j + 1;
+            }
         }
         return sortida;
     }
