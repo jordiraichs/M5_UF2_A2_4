@@ -3,6 +3,23 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class EsVocalTest {
 
+   @Test
+   public void testPerAra(){
+
+        char caracter = 'U';
+        boolean resultat = CercarVocals.esVocal(caracter);
+        assertTrue(resultat);
+       
+        caracter = '$';
+        resultat = CercarVocals.esVocal(caracter);
+        assertFalse(resultat);
+        
+
+
+   }
+
+
+
     @Test
     public void testCaractersRaros(){
         char c = '¿' ; // altres caracters ',/,(,...
