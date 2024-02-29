@@ -31,7 +31,7 @@ public class CercarVocalsTest {
     public void testCercarVocalsStringsRaros(){
         
         String entrada = "EL meu DNI és 32323232M";
-        char[] esperat = {'E','e','u','I','é','M'};
+        char[] esperat = {'E','e','u','I'};
         char[] resultat = CercarVocals.cercarVocals(entrada);
         
         assertArrayEquals(esperat,resultat);

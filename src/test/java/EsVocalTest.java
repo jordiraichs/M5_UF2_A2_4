@@ -57,8 +57,6 @@ public class EsVocalTest {
         entrada = '€';
         sortidaesperada = CercarVocals.esVocal(entrada);
         assertFalse(sortidaesperada);
-    }
-
-   
+    }   
 
 }
