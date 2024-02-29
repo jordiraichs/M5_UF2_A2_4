@@ -1,8 +1,10 @@
 public class CercarVocals {
 
     public static void main(String[] arg){
+
         char[] resultat = cercarVocals("HolA com va a la casa de");
         imprimir(resultat);
+
     }
 
     /**
@@ -11,15 +13,15 @@ public class CercarVocals {
      * @return un char[] amb les vocals de entrada
      */
     public static char[] cercarVocals(String entrada) {
+        
         int num_vocals = numVocals(entrada);
-
         char[] sortida = new char[num_vocals];
 
         char c;
         int i , j =0;
         for(i = 0; i < entrada.length(); i ++){
             c = entrada.charAt(i);
-            if(esVocal(c)){
+            if( esVocal(c) == true ){
                 sortida[j]=entrada.charAt(i);
                 j = j + 1;
             }
@@ -33,6 +35,7 @@ public class CercarVocals {
      * @return cert: és vocal , fals : no és vocal
      */
     public static boolean esVocal(char c){
+        
         if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
                 || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
             return true;
